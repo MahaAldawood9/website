@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    font: times;
+    background: #1c106b;
+    color: rgb(192, 147, 0);
+    padding: 20px;
+    text-align: center;
+  }
+
+    /* my name in title */
+    h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 2px;
+      }
+    
+    
+    /* architecture plus design */
+    h2 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 5px;
+      }
+    
+
+  body {
+    font: oxygen-light;
+    color: hwb(0 16% 84%);
+    background-color: white;
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.10) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.10) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+
+
+  /* bullet points */
+  .accordion-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+
+  
+  .accordion-content {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+  }
+  
+
+
+  
+  main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .accordion-title {
+    padding: 15px;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+  }
+  
+  .accordion-title:hover {
+    background-color: #ddd;
+  }
+  
+
+  .accordion-content {
+    display: none;
+    transition: all 0.3s ease;
+    background-color: #eeeeee;
+
+  }
+  
+  .accordion-content.active {
+    display: block;
+  }
+  
+  
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background: #444;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+
+
+
+  
+  .about-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+  
+  .about-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1%;
+    border: 1px solid #1c106b;
+  }
+  
+  .about-description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 500px;
+  }
+  
