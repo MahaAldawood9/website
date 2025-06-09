@@ -32,7 +32,7 @@
 
   body {
     font: oxygen-light;
-    color: hwb(0 16% 84%);
+    color: #1c106b;
     background-color: white;
     background-image: 
       linear-gradient(to right, rgba(0, 0, 0, 0.10) 1px, transparent 1px),
@@ -112,7 +112,7 @@
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 100px;
   }
   
   @keyframes fadeIn {
@@ -124,16 +124,18 @@
 
 
   
+
+
   .about-container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* aligns everything to the left */
     gap: 20px;
-    padding: 20px 0;
-    text-align: left;
+    padding: 20px 40px; /* ← same left/right padding for both sections */
     flex-wrap: wrap;
   }
+  
   
   .about-photo {
     width: 200px;
@@ -147,6 +149,79 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     line-height: 1.5;
-    max-width: 500px;
+    max-width: 400px;
+    flex-wrap: wrap;
+    flex: 50;
+  }
+  
+
+ 
+
+  .work-samples-grid {
+    display: flex;
+    justify-content: center;     
+    gap: 20px;                
+    flex-wrap: wrap;           
+    padding: 20px 0;
+  }
+  
+  
+  .work-sample-card {
+    width: 200px;
+    border: 1px solid #1c106b;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #1c106b;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .work-sample-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .work-sample-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .work-sample-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    padding: 1px;
+    color: #ffffff;
+  }
+  
+  .work-sample-iframe {
+    width: 100%;
+    height: 160px;
+    border: none;
+    pointer-events: none; /* makes iframe non-clickable */
+  }
+  
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  #contact {
+    text-align: center;
+    padding: 20px;
   }
   
