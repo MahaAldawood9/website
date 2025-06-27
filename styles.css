@@ -65,7 +65,7 @@
   
   .accordion-item {
     border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .accordion-title {
@@ -225,3 +225,113 @@
     padding: 20px;
   }
   
+
+  .image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.image-grid figure {
+  flex: 1 1 calc(50% - 1.5rem); /* two columns */
+  margin: 0;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-grid figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+
+/* other tabs */
+
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1px 1px;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+}
+
+header {
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #1c106b;
+}
+
+.meta {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+.project-description {
+    margin-top: 2rem;
+    line-height: 1.7;
+}
+
+figure {
+    margin: 2rem 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0rem;
+}
+
+.info-box {
+    background: #f0f0f0;
+    padding: 1rem;
+    margin: 1rem 10;
+    border-left: 4px solid #1c106b;
+    line-height: 1.5;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 3rem;
+    color: #1c106b;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: #131313;
+    margin-top: 4rem;
+}
+
+
+
+
+
